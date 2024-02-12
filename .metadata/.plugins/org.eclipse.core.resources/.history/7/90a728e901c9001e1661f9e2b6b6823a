@@ -1,0 +1,17 @@
+package com.employee.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "empdata")
+public class Employee {
+	@Id
+	private Long empid;
+	private String emp_name;
+	private Float emp_salary;
+	private int emp_age;
+	private String emp_city;
+
+}
